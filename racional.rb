@@ -24,12 +24,12 @@ class Fraccion
         end
 
         #Producto
-        def *(value)
-                Fraccion.new(@a * value, @b * value)
+        def *(other)
+                Fraccion.new(@a * other.a, @b * other.b)
         end
 
         #Division
         def /(value)
-                Fraccion.new(@a, @b * value)
+                Fraccion.new(@a * other.b, @b * other.a)
         end
 end
