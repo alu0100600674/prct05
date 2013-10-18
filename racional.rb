@@ -43,7 +43,7 @@ class Fraccion
         end
 
         #Division
-        def dividir(value)
+        def /(other)
                 division = Fraccion.new(@a * other.b, @b * other.a)
 		division.simplificar
         end

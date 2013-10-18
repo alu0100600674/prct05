@@ -27,7 +27,7 @@ class Test_Fraccion < Test::Unit::TestCase
 
 	#Test para la division
 	def test_division
-		assert_equal("16/15", (Fraccion.new(2, 5).dividir(Fraccion.new(3, 8))).to_s)
+		assert_equal("16/15", (Fraccion.new(2, 5)/(Fraccion.new(3, 8))).to_s)
 	end
 
 end
