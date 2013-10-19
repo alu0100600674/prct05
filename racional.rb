@@ -58,9 +58,3 @@ class Fraccion
 
 end
 
-#Prueba de las operaciones
-r1 = Fraccion.new(1,4)
-r2 = Fraccion.new(2,4)
-r3 = r1 + r2
-
-puts r3
