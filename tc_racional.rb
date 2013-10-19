@@ -7,7 +7,7 @@ class Test_Fraccion < Test::Unit::TestCase
 
 	#Test de def
 	def test_simple
-		assert.equal("1/2", Fraccion.new(1, 2).to_s)
+		assert_equal("1/2", Fraccion.new(2, 4).to_s)
 	end
 
 	#Test para la suma
