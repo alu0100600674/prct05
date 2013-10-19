@@ -8,7 +8,9 @@ class Fraccion
 
         #Constructor
         def initialize(a, b)
-                @a, @b = a, b
+                max_comun_div = gcd(a, b)
+		@a = a / max_comun_div
+		@b = b / max_comun_div
         end
 
         #To_s
