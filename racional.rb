@@ -20,9 +20,9 @@ class Fraccion
 
         #Suma
         def +(other)
-		if(@b == other.b)
+		if(@b == other.b) #Suma con igual denominador
 			suma = Fraccion.new(@a + other.a, @b)
-		else
+		else #Suma con distinto denominador
 	                suma = Fraccion.new(@a * other.b + @b * other.a, @b * other.b)
         	end
 		suma.simplificar
@@ -30,9 +30,9 @@ class Fraccion
 
         #Resta
         def -(other)
-		if(@b == other.b)
+		if(@b == other.b) #Resta con igual denominador
                 	resta = Fraccion.new(@a - other.a, @b)
-		else
+		else #Resta con distinto denominador
 			resta = Fraccion.new(@a * other.b - @b * other.a, @b * other.b)
 		end
 		resta.simplificar
